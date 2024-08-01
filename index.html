@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discrete Mathematics Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>An Activity on the Real-Life Application of Discrete Mathematics</h1>
+
+      <div class="problem-statement">
+        <h2>Problem Statement</h2>
+        <p>
+          You are required to create a secure login page where the password must
+          be alphanumeric and contain special characters. The Pigeonhole
+          Principle is applied here to ensure uniqueness and security of user
+          credentials.
+        </p>
+        <h3>Discrete Mathematics Principle Used</h3>
+        <p>
+          <strong>Pigeonhole Principle:</strong> If there are more items than
+          containers, at least one container must hold more than one item. In
+          terms of passwords, having a limited number of unique combinations
+          with a large number of users means password collisions will occur
+          without complexity.
+        </p>
+      </div>
+
+      <form id="login-form" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+
+      <div id="message" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
